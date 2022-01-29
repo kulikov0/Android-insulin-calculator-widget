@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kulikov.insulincalc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InsulinCalcWidget">
+
+        <activity
+            android:name="kulikov.insulincalc.DefaultActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:exported="true"/>
+        <receiver
+            android:name="kulikov.insulincalc.InsulinCalcWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>
