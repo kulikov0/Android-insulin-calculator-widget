@@ -1,0 +1,7 @@
+<resources>
+    <string name="required_sugar">Нужный сахар</string>
+    <string name="coefficient">Коэффициент</string>
+    <string name="current_sugar">Текущий сахар</string>
+    <string name="insulin">Инсулин</string>
+    <string name="placeholder_units">$s ед.</string>
+</resources>
