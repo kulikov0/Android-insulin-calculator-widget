@@ -1,5 +1,6 @@
 package kulikov.insulincalc
 
+import android.annotation.SuppressLint
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
@@ -65,6 +66,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
         updateWidgets(context, intent)
     }
 
+    @SuppressLint("StringFormatInvalid")
     private fun calculateTargetInsulin(context: Context) {
 
         ParamsDb.restoreValues(context)
@@ -91,12 +93,14 @@ class InsulinCalcWidget : AppWidgetProvider() {
         val roundedTargetInsulinValue = BigDecimal(targetInsulinValue)
             .setScale(3, RoundingMode.HALF_EVEN)
 
-        var roundedTargetValue = "$roundedTargetInsulinValue".dropLastWhile { it == '0' || it == '.'}
+        var roundedTargetValue =
+            "$roundedTargetInsulinValue".dropLastWhile { it == '0' || it == '.' }
 
         if (roundedTargetValue.isBlank())
             roundedTargetValue = "0"
 
-        val finalValue = "$roundedTargetValue units"
+
+        val finalValue = context.getString(R.string.placeholder_units, roundedTargetValue)
 
         CalculatorElements.ContainerInfo.Insulin.textValue = finalValue
 
@@ -172,7 +176,10 @@ class InsulinCalcWidget : AppWidgetProvider() {
 
             currentContainerInfo.textValue = targetSymbol
 
-            remoteViews?.setTextViewText(currentContainerInfo.textId, currentContainerInfo.textValue)
+            remoteViews?.setTextViewText(
+                currentContainerInfo.textId,
+                currentContainerInfo.textValue
+            )
 
             ParamsDb.saveValues(context)
 

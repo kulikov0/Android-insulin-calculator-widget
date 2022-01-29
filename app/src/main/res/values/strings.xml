@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">InsulinCalcWidget</string>
+    <string name="app_name" translatable="false">Insulin Calculator Widget</string>
+    <string name="required_sugar">Required sugar</string>
+    <string name="coefficient">Coefficient</string>
+    <string name="current_sugar">Current sugar</string>
+    <string name="insulin">Insulin</string>
+    <string name="placeholder_units">%s units</string>
 </resources>

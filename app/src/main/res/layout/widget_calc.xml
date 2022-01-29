@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_rounded"
     android:orientation="vertical"
-    tools:ignore="NestedWeights, HardcodedText, ContentDescription">
+    tools:ignore="NestedWeights, ContentDescription, HardcodedText">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Required sugar"
+                android:text="@string/required_sugar"
                 android:textColor="#000" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Current sugar"
+                android:text="@string/current_sugar"
                 android:textColor="#000" />
 
             <TextView
@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Coefficient"
+                android:text="@string/coefficient"
                 android:textColor="#000" />
 
             <TextView
@@ -110,7 +110,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Insulin"
+                android:text="@string/insulin"
                 android:textColor="#000" />
 
             <TextView
