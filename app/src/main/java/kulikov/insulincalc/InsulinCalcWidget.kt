@@ -17,7 +17,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
 
     override fun onEnabled(context: Context) {
         super.onEnabled(context)
-        ParamsDb.clear(context)
+        ParamsDb.restoreValues(context)
     }
 
     override fun onUpdate(
@@ -29,6 +29,9 @@ class InsulinCalcWidget : AppWidgetProvider() {
         if (remoteViews == null) {
             remoteViews = RemoteViews(context.packageName, R.layout.widget_calc)
         }
+
+        updateViews()
+
         setPendingIntentsToElements(context, remoteViews, appWidgetIds)
 
         val component = ComponentName(context, this::class.java)
@@ -53,6 +56,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
             R.id.tvDelete -> removeOneSymbol(context)
 
             R.id.tvEquals -> calculateTargetInsulin(context)
+
             else -> {
                 if (elementId in CalculatorElements.containerIds) {
                     enableContainer(elementId, context)
@@ -104,11 +108,6 @@ class InsulinCalcWidget : AppWidgetProvider() {
 
         CalculatorElements.ContainerInfo.Insulin.textValue = finalValue
 
-        remoteViews?.setTextViewText(
-            CalculatorElements.ContainerInfo.Insulin.textId,
-            finalValue
-        )
-
     }
 
     private fun enableContainer(textId: Int, context: Context) {
@@ -150,15 +149,38 @@ class InsulinCalcWidget : AppWidgetProvider() {
             }
             currentContainerInfo.textValue = targetSymbol
 
-            remoteViews?.setTextViewText(
-                currentContainerInfo.textId,
-                targetSymbol
-            )
-
             ParamsDb.saveValues(context)
 
         }
 
+
+    }
+
+    private fun updateViews() {
+        val reqSugarInfo = CalculatorElements.ContainerInfo.RequiredSugar
+        val insulinInfo = CalculatorElements.ContainerInfo.Insulin
+        val currentSugar = CalculatorElements.ContainerInfo.CurrentSugar
+        val coefficientInfo = CalculatorElements.ContainerInfo.Coefficient
+
+        remoteViews?.setTextViewText(
+            reqSugarInfo.textId,
+            reqSugarInfo.textValue
+        )
+
+        remoteViews?.setTextViewText(
+            insulinInfo.textId,
+            insulinInfo.textValue
+        )
+
+        remoteViews?.setTextViewText(
+            currentSugar.textId,
+            currentSugar.textValue
+        )
+
+        remoteViews?.setTextViewText(
+            coefficientInfo.textId,
+            coefficientInfo.textValue
+        )
 
     }
 
@@ -175,11 +197,6 @@ class InsulinCalcWidget : AppWidgetProvider() {
             }
 
             currentContainerInfo.textValue = targetSymbol
-
-            remoteViews?.setTextViewText(
-                currentContainerInfo.textId,
-                currentContainerInfo.textValue
-            )
 
             ParamsDb.saveValues(context)
 

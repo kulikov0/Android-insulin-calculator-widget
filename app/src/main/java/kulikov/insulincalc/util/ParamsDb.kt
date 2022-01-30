@@ -46,10 +46,6 @@ object ParamsDb {
         }
     }
 
-    fun clear(context: Context) {
-       getPrefs(context).edit().clear().apply()
-    }
-
     private fun getPrefs(context: Context): SharedPreferences {
         return context.getSharedPreferences(ARG_PREFS, Context.MODE_PRIVATE)
     }
