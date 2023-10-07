@@ -235,7 +235,12 @@ class InsulinCalcWidget : AppWidgetProvider() {
         intent.action = BUTTON_PRESS_ACTION
         intent.putExtra(ELEMENT_ID, buttonId)
         intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, widgetIds)
-        return PendingIntent.getBroadcast(context, buttonId, intent, PendingIntent.FLAG_ONE_SHOT)
+        return PendingIntent.getBroadcast(
+            context,
+            buttonId,
+            intent,
+            PendingIntent.FLAG_ONE_SHOT or PendingIntent.FLAG_IMMUTABLE
+        )
     }
 
 
