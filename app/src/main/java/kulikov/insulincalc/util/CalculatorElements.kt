@@ -21,12 +21,11 @@ object CalculatorElements {
     )
 
     private val CONTAINERS: Map<Int, Int> = mapOf(
-        R.id.tvRequiredSugar to  R.id.containerRequiredSugar,
-        R.id.tvCurrentSugar to  R.id.containerCurrentSugar,
-        R.id.tvCoefficient to  R.id.containerCoefficient,
-        R.id.tvInsulin to  R.id.containerInsulin
+        R.id.tvRequiredSugar to R.id.containerRequiredSugar,
+        R.id.tvCurrentSugar to R.id.containerCurrentSugar,
+        R.id.tvCoefficient to R.id.containerCoefficient,
+        R.id.tvInsulin to R.id.containerInsulin
     )
-
 
     fun getButtonSymbol(buttonId: Int): String {
         return ELEMENTS[buttonId].toString()
@@ -50,7 +49,7 @@ object CalculatorElements {
 
         companion object {
             fun fromTextId(id: Int): ContainerInfo? {
-                return when(id) {
+                return when (id) {
                     R.id.tvRequiredSugar -> RequiredSugar
                     R.id.tvCurrentSugar -> CurrentSugar
                     R.id.tvCoefficient -> Coefficient

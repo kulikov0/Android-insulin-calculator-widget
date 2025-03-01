@@ -5,4 +5,12 @@
     <string name="current_sugar">Current sugar</string>
     <string name="insulin">Insulin</string>
     <string name="placeholder_units">%s units</string>
+    <string name="thanks_for_the_install">Thanks for the installation!</string>
+    <string name="click">Click</string>
+    <string name="click_to_add">Click this button to add the widget to your home screen</string>
+    <string name="app_short_info_text">This application calculates the required dosage of insulin for injection using the formula:\n\n(current sugar level - desired sugar level) ÷ coefficient = number of units</string>
+    <string name="cannot_add_widget_from_app">It is not possible to add a widget from the app on your Android device. Please type in Google: "How to add widgets to the home screen in Android" to add them manually, or click the button below.</string>
+    <string name="how_to_use">Here is the \"how to use\" guide</string>
+    <string name="afterwords">This is a non-commercial application, and it will remain free forever. No advertising, no data collection/processing, etc. If you have any suggestions for improvement, please leave them on the application page.</string>
+    <string name="add_widget_error">Couldn\'t add widget. Try adding it manually</string>
 </resources>

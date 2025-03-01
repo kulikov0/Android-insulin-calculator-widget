@@ -4,4 +4,12 @@
     <string name="current_sugar">Текущий сахар</string>
     <string name="insulin">Инсулин</string>
     <string name="placeholder_units">%s ед.</string>
+    <string name="thanks_for_the_install">Спасибо за установку!</string>
+    <string name="click">Клик</string>
+    <string name="click_to_add">Нажмите эту кнопку, чтобы добавить виджет на свой домашний экран</string>
+    <string name="app_short_info_text">Это приложение рассчитывает необходимую дозировку инсулина для инъекций по формуле:\n\n(текущий уровень сахара - желаемый уровень сахара) ÷ коэффициент = количество единиц</string>
+    <string name="cannot_add_widget_from_app">На вашем Android-устройстве не удается добавить виджет из приложения. Пожалуйста, введите в Google: "как добавить виджеты на главный экран в Android", чтобы добавить их вручную, или нажмите кнопку ниже</string>
+    <string name="how_to_use">Вот инструкция по использованию</string>
+    <string name="afterwords">Это некоммерческое приложение, и оно останется бесплатным навсегда. Без рекламы, сбора/обработки ваших данных и прочего. Если у вас есть какие-либо предложения по улучшению, пожалуйста, оставьте их на странице приложения</string>
+    <string name="add_widget_error">Не удалось добавить виджет. Попробуйте добавить вручную</string>
 </resources>

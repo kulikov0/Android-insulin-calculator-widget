@@ -25,7 +25,6 @@ class InsulinCalcWidget : AppWidgetProvider() {
         appWidgetManager: AppWidgetManager,
         appWidgetIds: IntArray
     ) {
-
         if (remoteViews == null) {
             remoteViews = RemoteViews(context.packageName, R.layout.widget_calc)
         }
@@ -43,7 +42,6 @@ class InsulinCalcWidget : AppWidgetProvider() {
         super.onReceive(context, intent)
         if (intent.action == BUTTON_PRESS_ACTION)
             processButtonClick(context, intent)
-
     }
 
     private fun processButtonClick(context: Context, intent: Intent) {
@@ -63,7 +61,6 @@ class InsulinCalcWidget : AppWidgetProvider() {
                 } else {
                     addSymbolToActiveContainer(elementId, context)
                 }
-
             }
         }
 
@@ -103,11 +100,9 @@ class InsulinCalcWidget : AppWidgetProvider() {
         if (roundedTargetValue.isBlank())
             roundedTargetValue = "0"
 
-
         val finalValue = context.getString(R.string.placeholder_units, roundedTargetValue)
 
         CalculatorElements.ContainerInfo.Insulin.textValue = finalValue
-
     }
 
     private fun enableContainer(textId: Int, context: Context) {
@@ -116,7 +111,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
             remoteViews?.setInt(
                 CalculatorElements.getContainerBgId(id),
                 "setBackgroundResource",
-                R.color.white
+                android.R.color.transparent
             )
         }
 
@@ -124,7 +119,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
             remoteViews?.setInt(
                 CalculatorElements.getContainerBgId(textId),
                 "setBackgroundResource",
-                R.drawable.bg_rounded_selected
+                R.drawable.bg_selected
             )
 
             CalculatorElements.ContainerInfo.fromTextId(textId)
@@ -150,10 +145,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
             currentContainerInfo.textValue = targetSymbol
 
             ParamsDb.saveValues(context)
-
         }
-
-
     }
 
     private fun updateViews() {
@@ -201,10 +193,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
             ParamsDb.saveValues(context)
 
         }
-
-
     }
-
 
     private fun setPendingIntentsToElements(
         context: Context,
@@ -252,7 +241,6 @@ class InsulinCalcWidget : AppWidgetProvider() {
         private var remoteViews: RemoteViews? = null
 
         private var currentContainerInfo: CalculatorElements.ContainerInfo? = null
-
     }
 
 }

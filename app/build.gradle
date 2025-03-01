@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace "kulikov.insulincalc"
     compileSdk 34
 
     defaultConfig {

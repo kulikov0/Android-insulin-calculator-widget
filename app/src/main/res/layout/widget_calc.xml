@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:minWidth="200dp"
+    android:minHeight="380dp"
     android:background="@drawable/bg_rounded"
     android:orientation="vertical"
     tools:ignore="NestedWeights, ContentDescription, HardcodedText">
@@ -25,16 +27,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textSize="14dp"
                 android:text="@string/required_sugar"
-                android:textColor="#000" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/tvRequiredSugar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textColor="#000"
-                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:textSize="35dp"
                 android:text="0" />
 
         </LinearLayout>
@@ -51,15 +54,16 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/current_sugar"
-                android:textColor="#000" />
+                android:textSize="14dp"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/tvCurrentSugar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textColor="#000"
-                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:textSize="35dp"
                 android:text="0" />
 
         </LinearLayout>
@@ -85,16 +89,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textSize="14dp"
                 android:text="@string/coefficient"
-                android:textColor="#000" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/tvCoefficient"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textColor="#000"
-                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:textSize="35dp"
                 android:text="0" />
 
         </LinearLayout>
@@ -110,16 +115,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/insulin"
-                android:textColor="#000" />
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="@string/insulin" />
 
             <TextView
                 android:id="@+id/tvInsulin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textColor="#000"
-                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:textSize="35dp"
                 android:text="0" />
 
         </LinearLayout>
@@ -132,19 +138,17 @@
         android:layout_height="wrap_content"
         android:weightSum="4">
 
-
         <TextView
             android:id="@+id/tv7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="7"
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:gravity="center"/>
-
 
         <TextView
             android:id="@+id/tv8"
@@ -152,11 +156,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
-            android:text="8"
-            android:textSize="30sp"
-            android:gravity="center"/>
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="8" />
 
 
         <TextView
@@ -165,11 +169,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
-            android:text="9"
-            android:textSize="30sp"
-            android:gravity="center"/>
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="9" />
 
     </LinearLayout>
 
@@ -184,11 +188,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
-            android:text="4"
-            android:textSize="30sp"
-            android:gravity="center"/>
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="4" />
 
 
         <TextView
@@ -197,11 +201,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
-            android:text="5"
-            android:textSize="30sp"
-            android:gravity="center"/>
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="5" />
 
 
         <TextView
@@ -210,10 +214,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="6"
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:gravity="center"/>
 
     </LinearLayout>
@@ -223,17 +227,16 @@
         android:layout_height="wrap_content"
         android:weightSum="4">
 
-
         <TextView
             android:id="@+id/tv1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="1"
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:gravity="center"/>
 
 
@@ -243,10 +246,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="2"
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:gravity="center"/>
 
 
@@ -256,10 +259,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="3"
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:gravity="center"/>
 
     </LinearLayout>
@@ -275,10 +278,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="←"
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:gravity="center"/>
 
         <TextView
@@ -287,10 +290,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="0"
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:gravity="center"/>
 
         <TextView
@@ -299,10 +302,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="."
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:gravity="center"/>
 
         <TextView
@@ -311,13 +314,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="="
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:gravity="center"/>
 
     </LinearLayout>
-
-
 </LinearLayout>
