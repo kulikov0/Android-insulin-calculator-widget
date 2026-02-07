@@ -56,12 +56,16 @@ class DefaultActivity: AppCompatActivity() {
             llClickToAdd.isVisible = false
         }
 
+        findViewById<AppCompatButton>(R.id.btnSettings).setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
+        }
+
         findViewById<AppCompatButton>(R.id.btnTutorial).setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW,
                 "https://www.youtube.com/watch?v=uQ4XJtGcHpo".toUri())
             try {
                 startActivity(browserIntent)
-            } catch (t: Throwable) {
+            } catch (_: Throwable) {
                 Toast.makeText(this, "Cannot find a browser app on device", Toast.LENGTH_SHORT).show()
             }
         }

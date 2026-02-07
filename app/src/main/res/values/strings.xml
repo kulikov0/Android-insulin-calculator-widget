@@ -13,4 +13,18 @@
     <string name="how_to_use">Here is the \"how to use\" guide</string>
     <string name="afterwords">This is a non-commercial application, and it will remain free forever. No advertising, no data collection/processing, etc. If you have any suggestions for improvement, please leave them on the application page.</string>
     <string name="add_widget_error">Couldn\'t add widget. Try adding it manually</string>
+    <string name="iob_display">IOB: %s units</string>
+    <string name="inject">Inject</string>
+    <string name="settings">Settings</string>
+    <string name="iob_enabled_label">Enable IOB tracking (experimental)</string>
+    <string name="dia_label">Insulin duration</string>
+    <string name="dia_hours_short">h</string>
+    <string name="dia_minutes_short">min</string>
+    <string name="save">Save</string>
+    <string name="clear_history">Clear injection history</string>
+    <string name="history_cleared">Injection history cleared</string>
+    <string name="last_injection_label">Last injection time</string>
+    <string name="edit">Edit</string>
+    <string name="no_injections">No injections recorded</string>
+    <string name="iob_explanation">IOB (Insulin On Board) estimates how much previously injected insulin is still active in your body. This helps avoid insulin stacking — injecting too much because a prior dose is still working.\n\nAfter you calculate a dose, tap \"Inject\" to log it. The widget will then subtract the remaining active insulin from future dose recommendations.\n\nThe calculation uses linear decay over the configured duration (DIA). For example, with a 4-hour DIA, half the dose is considered active after 2 hours, and none after 4 hours.</string>
 </resources>

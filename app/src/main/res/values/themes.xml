@@ -1,7 +1,10 @@
 <resources>
     <!-- Base application theme. -->
     <style name="Theme.InsulinCalcWidget" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorSecondary">@color/black</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">@color/black</item>
     </style>
 </resources>

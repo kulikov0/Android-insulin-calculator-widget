@@ -8,7 +8,10 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.widget.RemoteViews
+import android.view.View
 import kulikov.insulincalc.util.CalculatorElements
+import kulikov.insulincalc.util.IobCalculator
+import kulikov.insulincalc.util.Injection
 import kulikov.insulincalc.util.ParamsDb
 import java.math.BigDecimal
 import java.math.RoundingMode
@@ -29,7 +32,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
             remoteViews = RemoteViews(context.packageName, R.layout.widget_calc)
         }
 
-        updateViews()
+        updateViews(context)
 
         setPendingIntentsToElements(context, remoteViews, appWidgetIds)
 
@@ -54,6 +57,8 @@ class InsulinCalcWidget : AppWidgetProvider() {
             R.id.tvDelete -> removeOneSymbol(context)
 
             R.id.tvEquals -> calculateTargetInsulin(context)
+
+            R.id.tvInject -> handleInject(context)
 
             else -> {
                 if (elementId in CalculatorElements.containerIds) {
@@ -88,8 +93,16 @@ class InsulinCalcWidget : AppWidgetProvider() {
         if (coefficientValue == .0)
             return
 
-        val targetInsulinValue = (currentSugarValue - requiredSugarValue) / coefficientValue
+        val rawDose = (currentSugarValue - requiredSugarValue) / coefficientValue
 
+        val targetInsulinValue = if (ParamsDb.restoreIobEnabled(context)) {
+            val diaHours = ParamsDb.restoreDiaHours(context)
+            val injections = ParamsDb.restoreInjections(context)
+            val iob = IobCalculator.calculateIob(injections, diaHours)
+            maxOf(0.0, rawDose - iob)
+        } else {
+            rawDose
+        }
 
         val roundedTargetInsulinValue = BigDecimal(targetInsulinValue)
             .setScale(3, RoundingMode.HALF_EVEN)
@@ -148,7 +161,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
         }
     }
 
-    private fun updateViews() {
+    private fun updateViews(context: Context) {
         val reqSugarInfo = CalculatorElements.ContainerInfo.RequiredSugar
         val insulinInfo = CalculatorElements.ContainerInfo.Insulin
         val currentSugar = CalculatorElements.ContainerInfo.CurrentSugar
@@ -174,6 +187,27 @@ class InsulinCalcWidget : AppWidgetProvider() {
             coefficientInfo.textValue
         )
 
+        val iobEnabled = ParamsDb.restoreIobEnabled(context)
+        if (iobEnabled) {
+            remoteViews?.setViewVisibility(R.id.rowIob, View.VISIBLE)
+            val diaHours = ParamsDb.restoreDiaHours(context)
+            val injections = ParamsDb.restoreInjections(context)
+            val iob = IobCalculator.calculateIob(injections, diaHours)
+            val iobRounded = BigDecimal(iob).setScale(2, RoundingMode.HALF_EVEN)
+            val iobText = context.getString(R.string.iob_display, "$iobRounded")
+            remoteViews?.setTextViewText(R.id.tvIob, iobText)
+        } else {
+            remoteViews?.setViewVisibility(R.id.rowIob, View.GONE)
+        }
+    }
+
+    private fun handleInject(context: Context) {
+        if (!ParamsDb.restoreIobEnabled(context)) return
+        val insulinText = CalculatorElements.ContainerInfo.Insulin.textValue
+        val numericText = insulinText.replace(Regex("[^0-9.]"), "").trim()
+        val units = numericText.toDoubleOrNull() ?: return
+        if (units <= 0.0) return
+        ParamsDb.addInjection(Injection(System.currentTimeMillis(), units), context)
     }
 
     private fun addSymbolToActiveContainer(buttonId: Int, context: Context) {

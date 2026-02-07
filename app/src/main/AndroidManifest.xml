@@ -20,6 +20,12 @@
             </intent-filter>
 
         </activity>
+
+        <activity
+            android:name="kulikov.insulincalc.SettingsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
         <receiver
             android:name="kulikov.insulincalc.InsulinCalcWidget"
             android:exported="true">

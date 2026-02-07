@@ -17,7 +17,8 @@ object CalculatorElements {
         R.id.tv9 to "9",
         R.id.tvDot to ".",
         R.id.tvDelete to "",
-        R.id.tvEquals to ""
+        R.id.tvEquals to "",
+        R.id.tvInject to ""
     )
 
     private val CONTAINERS: Map<Int, Int> = mapOf(
