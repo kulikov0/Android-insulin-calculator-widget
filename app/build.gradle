@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace "kulikov.insulincalc"
-    compileSdk 34
+    compileSdk 36
 
     defaultConfig {
         applicationId "kulikov.insulincalc"
         minSdk 21
-        targetSdk 35
+        targetSdk 36
         versionCode 8
         versionName "1.0.4"
 

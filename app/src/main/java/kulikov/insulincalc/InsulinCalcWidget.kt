@@ -140,7 +140,7 @@ class InsulinCalcWidget : AppWidgetProvider() {
             val currentText = currentContainerInfo.textValue
             val targetSymbol = when {
                 currentText.length <= 1 -> "0"
-                else -> currentText.substring(0, currentText.length - 1)
+                else -> currentText.dropLast(1)
             }
             currentContainerInfo.textValue = targetSymbol
 

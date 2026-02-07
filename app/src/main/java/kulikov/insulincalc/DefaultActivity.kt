@@ -4,7 +4,6 @@ import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
 import android.content.Intent
-import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.widget.LinearLayout
@@ -13,6 +12,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
+import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
@@ -49,7 +49,7 @@ class DefaultActivity: AppCompatActivity() {
             val btnAddToHomeScreen = findViewById<AppCompatButton>(R.id.btnAddToHomeScreen)
             btnAddToHomeScreen.setOnClickListener {
                 if (!appWidgetManager.requestPinAppWidget(widgetProvider, null, successCallback)) {
-                    Toast.makeText(this, getString(R.string.add_widget_error), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.add_widget_error), Toast.LENGTH_SHORT).show()
                 }
             }
         } else {
@@ -57,11 +57,12 @@ class DefaultActivity: AppCompatActivity() {
         }
 
         findViewById<AppCompatButton>(R.id.btnTutorial).setOnClickListener {
-            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=uQ4XJtGcHpo"))
+            val browserIntent = Intent(Intent.ACTION_VIEW,
+                "https://www.youtube.com/watch?v=uQ4XJtGcHpo".toUri())
             try {
                 startActivity(browserIntent)
             } catch (t: Throwable) {
-                Toast.makeText(this, "Cannot find a browser app on device", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Cannot find a browser app on device", Toast.LENGTH_SHORT).show()
             }
         }
     }
