@@ -1,9 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.InsulinCalcWidget" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorOnSecondary">@color/black</item>
-        <item name="android:statusBarColor">@color/white</item>
-        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
     </style>
 </resources>
