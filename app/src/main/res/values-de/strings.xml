@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="required_sugar">Gewünschter Zucker</string>
+    <string name="coefficient">Koeffizient</string>
+    <string name="current_sugar">Aktueller Zucker</string>
+    <string name="insulin">Insulin</string>
+    <string name="placeholder_units">%s Einheiten</string>
+    <string name="thanks_for_the_install">Danke für die Installation!</string>
+    <string name="click">Klick</string>
+    <string name="click_to_add">Tippen Sie auf diese Schaltfläche, um das Widget zu Ihrem Startbildschirm hinzuzufügen</string>
+    <string name="app_short_info_text">Diese App berechnet die erforderliche Insulindosis für die Injektion mit der Formel:\n\n(aktueller Zuckerspiegel - gewünschter Zuckerspiegel) ÷ Koeffizient = Anzahl der Einheiten</string>
+    <string name="cannot_add_widget_from_app">Es ist nicht möglich, ein Widget aus der App auf Ihrem Android-Gerät hinzuzufügen. Suchen Sie bei Google: „Wie fügt man Widgets zum Startbildschirm in Android hinzu", um sie manuell hinzuzufügen, oder tippen Sie auf die Schaltfläche unten.</string>
+    <string name="how_to_use">Hier ist die Bedienungsanleitung</string>
+    <string name="afterwords">Dies ist eine nicht-kommerzielle Anwendung und bleibt für immer kostenlos. Keine Werbung, keine Datenerfassung/-verarbeitung usw. Wenn Sie Verbesserungsvorschläge haben, hinterlassen Sie diese bitte auf der Anwendungsseite.</string>
+    <string name="add_widget_error">Widget konnte nicht hinzugefügt werden. Versuchen Sie es manuell</string>
+    <string name="iob_display">IOB: %s Einheiten</string>
+    <string name="iob_default_display">IOB: 0 Einheiten</string>
+    <string name="inject">Injizieren</string>
+    <string name="settings">Einstellungen</string>
+    <string name="iob_enabled_label">IOB-Tracking aktivieren (experimentell)</string>
+    <string name="dia_label">Insulindauer</string>
+    <string name="dia_hours_short">Std</string>
+    <string name="dia_minutes_short">Min</string>
+    <string name="save">Speichern</string>
+    <string name="clear_history">Injektionsverlauf löschen</string>
+    <string name="history_cleared">Injektionsverlauf gelöscht</string>
+    <string name="last_injection_label">Zeitpunkt der letzten Injektion</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="no_injections">Keine Injektionen erfasst</string>
+    <string name="iob_explanation">IOB (Insulin an Bord) schätzt, wie viel zuvor injiziertes Insulin noch in Ihrem Körper aktiv ist. Dies hilft, Insulinstapelung zu vermeiden — zu viel zu injizieren, weil eine vorherige Dosis noch wirkt.\n\nNach der Berechnung einer Dosis tippen Sie auf „Injizieren", um sie zu erfassen. Das Widget zieht dann das verbleibende aktive Insulin von zukünftigen Dosisempfehlungen ab.\n\nDie Berechnung verwendet einen linearen Abbau über die konfigurierte Dauer (DIA). Zum Beispiel gilt bei einem DIA von 4 Stunden die Hälfte der Dosis nach 2 Stunden als aktiv und nichts mehr nach 4 Stunden.</string>
+</resources>

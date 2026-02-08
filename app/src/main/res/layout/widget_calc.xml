@@ -152,7 +152,7 @@
             android:layout_weight="1"
             android:textColor="@color/black"
             android:textSize="14dp"
-            android:text="IOB: 0 units" />
+            android:text="@string/iob_default_display" />
 
         <TextView
             android:id="@+id/tvInject"

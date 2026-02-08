@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="required_sugar">目标血糖</string>
+    <string name="coefficient">系数</string>
+    <string name="current_sugar">当前血糖</string>
+    <string name="insulin">胰岛素</string>
+    <string name="placeholder_units">%s 单位</string>
+    <string name="thanks_for_the_install">感谢安装！</string>
+    <string name="click">点击</string>
+    <string name="click_to_add">点击此按钮将小组件添加到主屏幕</string>
+    <string name="app_short_info_text">此应用使用以下公式计算所需胰岛素注射剂量：\n\n（当前血糖水平 - 目标血糖水平）÷ 系数 = 单位数</string>
+    <string name="cannot_add_widget_from_app">无法从应用中添加小组件。请在 Google 搜索"如何在 Android 主屏幕添加小组件"以手动添加，或点击下方按钮。</string>
+    <string name="how_to_use">使用指南</string>
+    <string name="afterwords">这是一个非商业应用，将永远免费。没有广告，没有数据收集/处理等。如果您有任何改进建议，请在应用页面留言。</string>
+    <string name="add_widget_error">无法添加小组件，请尝试手动添加</string>
+    <string name="iob_display">IOB：%s 单位</string>
+    <string name="iob_default_display">IOB：0 单位</string>
+    <string name="inject">注射</string>
+    <string name="settings">设置</string>
+    <string name="iob_enabled_label">启用 IOB 追踪（实验性）</string>
+    <string name="dia_label">胰岛素作用时长</string>
+    <string name="dia_hours_short">时</string>
+    <string name="dia_minutes_short">分</string>
+    <string name="save">保存</string>
+    <string name="clear_history">清除注射记录</string>
+    <string name="history_cleared">注射记录已清除</string>
+    <string name="last_injection_label">上次注射时间</string>
+    <string name="edit">编辑</string>
+    <string name="no_injections">无注射记录</string>
+    <string name="iob_explanation">IOB（体内活性胰岛素）估算之前注射的胰岛素在体内仍有多少活性。这有助于避免胰岛素叠加——因为之前的剂量仍在起作用而注射过多。\n\n计算剂量后，点击"注射"进行记录。小组件将从未来的剂量建议中减去剩余的活性胰岛素。\n\n计算使用配置时长（DIA）内的线性衰减。例如，DIA 为 4 小时时，2 小时后一半剂量仍被视为活性，4 小时后则完全失效。</string>
+</resources>

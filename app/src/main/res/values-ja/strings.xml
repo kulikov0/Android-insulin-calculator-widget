@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="required_sugar">目標血糖値</string>
+    <string name="coefficient">係数</string>
+    <string name="current_sugar">現在の血糖値</string>
+    <string name="insulin">インスリン</string>
+    <string name="placeholder_units">%s 単位</string>
+    <string name="thanks_for_the_install">インストールありがとうございます！</string>
+    <string name="click">クリック</string>
+    <string name="click_to_add">このボタンをタップしてホーム画面にウィジェットを追加してください</string>
+    <string name="app_short_info_text">このアプリは次の式を使用してインスリンの必要投与量を計算します：\n\n（現在の血糖値 - 目標血糖値）÷ 係数 = 単位数</string>
+    <string name="cannot_add_widget_from_app">お使いの Android デバイスではアプリからウィジェットを追加できません。Google で「Android ホーム画面にウィジェットを追加する方法」を検索して手動で追加するか、下のボタンをタップしてください。</string>
+    <string name="how_to_use">使い方ガイドはこちら</string>
+    <string name="afterwords">これは非営利アプリであり、永久に無料です。広告なし、データ収集・処理なし等。改善のご提案があれば、アプリページにお寄せください。</string>
+    <string name="add_widget_error">ウィジェットを追加できませんでした。手動で追加してください</string>
+    <string name="iob_display">IOB：%s 単位</string>
+    <string name="iob_default_display">IOB：0 単位</string>
+    <string name="inject">注射</string>
+    <string name="settings">設定</string>
+    <string name="iob_enabled_label">IOB トラッキングを有効にする（実験的）</string>
+    <string name="dia_label">インスリン作用時間</string>
+    <string name="dia_hours_short">時間</string>
+    <string name="dia_minutes_short">分</string>
+    <string name="save">保存</string>
+    <string name="clear_history">注射履歴を消去</string>
+    <string name="history_cleared">注射履歴を消去しました</string>
+    <string name="last_injection_label">最後の注射時刻</string>
+    <string name="edit">編集</string>
+    <string name="no_injections">注射記録なし</string>
+    <string name="iob_explanation">IOB（残存インスリン）は、以前に注射したインスリンが体内でどれだけ活性を保っているかを推定します。これにより、前の投与がまだ効いているのに注射しすぎるインスリンの積み重ねを防ぐことができます。\n\n投与量を計算した後、「注射」をタップして記録します。ウィジェットは今後の投与推奨量から残存活性インスリンを差し引きます。\n\n計算は設定された作用時間（DIA）にわたる線形減衰を使用します。例えば、DIA が 4 時間の場合、2 時間後に半分が活性とみなされ、4 時間後にはゼロになります。</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="required_sugar">लक्ष्य शुगर</string>
+    <string name="coefficient">गुणांक</string>
+    <string name="current_sugar">वर्तमान शुगर</string>
+    <string name="insulin">इंसुलिन</string>
+    <string name="placeholder_units">%s यूनिट</string>
+    <string name="thanks_for_the_install">इंस्टॉल करने के लिए धन्यवाद!</string>
+    <string name="click">क्लिक</string>
+    <string name="click_to_add">होम स्क्रीन पर विजेट जोड़ने के लिए इस बटन पर टैप करें</string>
+    <string name="app_short_info_text">यह ऐप इस सूत्र का उपयोग करके इंजेक्शन के लिए आवश्यक इंसुलिन खुराक की गणना करता है:\n\n(वर्तमान शुगर स्तर - लक्ष्य शुगर स्तर) ÷ गुणांक = यूनिट की संख्या</string>
+    <string name="cannot_add_widget_from_app">आपके Android डिवाइस पर ऐप से विजेट जोड़ना संभव नहीं है। कृपया Google पर खोजें: "Android में होम स्क्रीन पर विजेट कैसे जोड़ें" या नीचे दिए गए बटन पर टैप करें।</string>
+    <string name="how_to_use">यहाँ उपयोग गाइड है</string>
+    <string name="afterwords">यह एक गैर-व्यावसायिक ऐप है और हमेशा मुफ्त रहेगा। कोई विज्ञापन नहीं, कोई डेटा संग्रह/प्रसंस्करण नहीं, आदि। यदि आपके पास सुधार के सुझाव हैं, तो कृपया उन्हें ऐप पेज पर छोड़ें।</string>
+    <string name="add_widget_error">विजेट जोड़ा नहीं जा सका। मैन्युअल रूप से जोड़ने का प्रयास करें</string>
+    <string name="iob_display">IOB: %s यूनिट</string>
+    <string name="iob_default_display">IOB: 0 यूनिट</string>
+    <string name="inject">इंजेक्ट</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="iob_enabled_label">IOB ट्रैकिंग सक्षम करें (प्रायोगिक)</string>
+    <string name="dia_label">इंसुलिन अवधि</string>
+    <string name="dia_hours_short">घंटे</string>
+    <string name="dia_minutes_short">मिनट</string>
+    <string name="save">सहेजें</string>
+    <string name="clear_history">इंजेक्शन इतिहास साफ़ करें</string>
+    <string name="history_cleared">इंजेक्शन इतिहास साफ़ किया गया</string>
+    <string name="last_injection_label">अंतिम इंजेक्शन का समय</string>
+    <string name="edit">संपादित करें</string>
+    <string name="no_injections">कोई इंजेक्शन दर्ज नहीं</string>
+    <string name="iob_explanation">IOB (शरीर में सक्रिय इंसुलिन) अनुमान लगाता है कि पहले इंजेक्ट किया गया कितना इंसुलिन अभी भी आपके शरीर में सक्रिय है। यह इंसुलिन स्टैकिंग से बचने में मदद करता है — पिछली खुराक अभी भी काम कर रही होने के कारण बहुत अधिक इंजेक्ट करना।\n\nखुराक की गणना के बाद, इसे रिकॉर्ड करने के लिए \"इंजेक्ट\" पर टैप करें। विजेट भविष्य की खुराक सिफारिशों से शेष सक्रिय इंसुलिन घटाएगा।\n\nगणना कॉन्फ़िगर की गई अवधि (DIA) पर रैखिक क्षय का उपयोग करती है। उदाहरण के लिए, 4 घंटे के DIA के साथ, 2 घंटे बाद आधी खुराक सक्रिय मानी जाती है, और 4 घंटे बाद कुछ भी नहीं।</string>
+</resources>

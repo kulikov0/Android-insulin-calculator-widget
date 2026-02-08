@@ -13,6 +13,7 @@
     <string name="afterwords">Это некоммерческое приложение, и оно останется бесплатным навсегда. Без рекламы, сбора/обработки ваших данных и прочего. Если у вас есть какие-либо предложения по улучшению, пожалуйста, оставьте их на странице приложения</string>
     <string name="add_widget_error">Не удалось добавить виджет. Попробуйте добавить вручную</string>
     <string name="iob_display">АИ: %s ед.</string>
+    <string name="iob_default_display">АИ: 0 ед.</string>
     <string name="inject">Ввести</string>
     <string name="settings">Настройки</string>
     <string name="iob_enabled_label">Включить отслеживание АИ (экспериментально)</string>

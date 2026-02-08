@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="required_sugar">السكر المطلوب</string>
+    <string name="coefficient">المعامل</string>
+    <string name="current_sugar">السكر الحالي</string>
+    <string name="insulin">الأنسولين</string>
+    <string name="placeholder_units">%s وحدة</string>
+    <string name="thanks_for_the_install">شكراً على التثبيت!</string>
+    <string name="click">انقر</string>
+    <string name="click_to_add">اضغط على هذا الزر لإضافة الأداة إلى شاشتك الرئيسية</string>
+    <string name="app_short_info_text">يحسب هذا التطبيق جرعة الأنسولين المطلوبة للحقن باستخدام الصيغة:\n\n(مستوى السكر الحالي - مستوى السكر المطلوب) ÷ المعامل = عدد الوحدات</string>
+    <string name="cannot_add_widget_from_app">لا يمكن إضافة أداة من التطبيق على جهاز Android الخاص بك. يرجى البحث في Google: \"كيفية إضافة أدوات إلى الشاشة الرئيسية في Android\" لإضافتها يدوياً، أو اضغط على الزر أدناه.</string>
+    <string name="how_to_use">إليك دليل الاستخدام</string>
+    <string name="afterwords">هذا تطبيق غير تجاري وسيظل مجانياً للأبد. بدون إعلانات، بدون جمع/معالجة بيانات، إلخ. إذا كان لديك أي اقتراحات للتحسين، يرجى تركها على صفحة التطبيق.</string>
+    <string name="add_widget_error">تعذر إضافة الأداة. حاول إضافتها يدوياً</string>
+    <string name="iob_display">IOB: %s وحدة</string>
+    <string name="iob_default_display">IOB: 0 وحدة</string>
+    <string name="inject">حقن</string>
+    <string name="settings">الإعدادات</string>
+    <string name="iob_enabled_label">تفعيل تتبع IOB (تجريبي)</string>
+    <string name="dia_label">مدة فعالية الأنسولين</string>
+    <string name="dia_hours_short">س</string>
+    <string name="dia_minutes_short">د</string>
+    <string name="save">حفظ</string>
+    <string name="clear_history">مسح سجل الحقن</string>
+    <string name="history_cleared">تم مسح سجل الحقن</string>
+    <string name="last_injection_label">وقت آخر حقنة</string>
+    <string name="edit">تعديل</string>
+    <string name="no_injections">لا توجد حقن مسجلة</string>
+    <string name="iob_explanation">IOB (الأنسولين النشط في الجسم) يقدّر كمية الأنسولين المحقون سابقاً والذي لا يزال نشطاً في جسمك. يساعد هذا في تجنب تراكم الأنسولين — حقن كمية كبيرة لأن جرعة سابقة لا تزال تعمل.\n\nبعد حساب الجرعة، اضغط على \"حقن\" لتسجيلها. ستقوم الأداة بطرح الأنسولين النشط المتبقي من توصيات الجرعات المستقبلية.\n\nيستخدم الحساب تناقصاً خطياً خلال المدة المعدّة (DIA). على سبيل المثال، مع DIA لمدة 4 ساعات، يُعتبر نصف الجرعة نشطاً بعد ساعتين، ولا شيء بعد 4 ساعات.</string>
+</resources>

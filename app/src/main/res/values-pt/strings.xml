@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="required_sugar">Açúcar desejado</string>
+    <string name="coefficient">Coeficiente</string>
+    <string name="current_sugar">Açúcar atual</string>
+    <string name="insulin">Insulina</string>
+    <string name="placeholder_units">%s unidades</string>
+    <string name="thanks_for_the_install">Obrigado pela instalação!</string>
+    <string name="click">Clique</string>
+    <string name="click_to_add">Clique neste botão para adicionar o widget à tela inicial</string>
+    <string name="app_short_info_text">Este aplicativo calcula a dosagem necessária de insulina para injeção usando a fórmula:\n\n(nível de açúcar atual - nível de açúcar desejado) ÷ coeficiente = número de unidades</string>
+    <string name="cannot_add_widget_from_app">Não é possível adicionar um widget pelo aplicativo no seu dispositivo Android. Pesquise no Google: "Como adicionar widgets à tela inicial no Android" para adicioná-los manualmente, ou clique no botão abaixo.</string>
+    <string name="how_to_use">Aqui está o guia de uso</string>
+    <string name="afterwords">Este é um aplicativo não comercial e permanecerá gratuito para sempre. Sem publicidade, sem coleta/processamento de dados, etc. Se você tiver sugestões de melhoria, deixe-as na página do aplicativo.</string>
+    <string name="add_widget_error">Não foi possível adicionar o widget. Tente adicioná-lo manualmente</string>
+    <string name="iob_display">IOB: %s unidades</string>
+    <string name="iob_default_display">IOB: 0 unidades</string>
+    <string name="inject">Injetar</string>
+    <string name="settings">Configurações</string>
+    <string name="iob_enabled_label">Ativar rastreamento de IOB (experimental)</string>
+    <string name="dia_label">Duração da insulina</string>
+    <string name="dia_hours_short">h</string>
+    <string name="dia_minutes_short">min</string>
+    <string name="save">Salvar</string>
+    <string name="clear_history">Limpar histórico de injeções</string>
+    <string name="history_cleared">Histórico de injeções limpo</string>
+    <string name="last_injection_label">Hora da última injeção</string>
+    <string name="edit">Editar</string>
+    <string name="no_injections">Nenhuma injeção registrada</string>
+    <string name="iob_explanation">IOB (Insulina a Bordo) estima quanta insulina injetada anteriormente ainda está ativa no seu corpo. Isso ajuda a evitar o acúmulo de insulina — injetar demais porque uma dose anterior ainda está atuando.\n\nApós calcular uma dose, toque em \"Injetar\" para registrá-la. O widget subtrairá a insulina ativa restante das recomendações futuras.\n\nO cálculo usa redução linear durante a duração configurada (DIA). Por exemplo, com um DIA de 4 horas, metade da dose é considerada ativa após 2 horas, e nada após 4 horas.</string>
+</resources>
